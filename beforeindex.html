@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Card Details Form</title>
+    <link rel="stylesheet" href="beforestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="images/bg-main-desktop.png" alt="">
+            <div class="card">
+                <img src="images/bg-card-front.png" alt="" class="card-front">
+                <img src="images/card-logo.svg" alt="" class="card-logo">
+                <h4 class="card-number">0000 0000 0000 0000</h4>
+                <div class="left-para"><p>FELICIA LEIRE</p></div>
+                <div class="right-para"><p><span class="month">00</span>/<span class="year">00</span></p></div>
+            </div>
+            <div class="back-card">
+                <img src="images/bg-card-back.png" alt="">
+            </div>
+        </div>
+        <div class="right-area">
+            <form onsubmit="confirm()">
+                <div class="input-grp">
+                    <p>CARDHOLDER NAME</p>
+                    <input type="text" placeholder="e.g. Jane AppleSeed">
+                    <p class="number-format-error username" style="display: none;">username can't be empty</p>
+                </div>
+                <div class="input-grp">
+                    <p>CARD NUMBER</p>
+                    <input type="text" placeholder="1234 5678 9123 0000">
+                    <p class="number-format-error" style="display: none;">Wrong format, numbers only</p>
+                </div>
+                <div class="input-grp3">
+                    <p>EXP. DATE (MM/YY)</p>
+                    <input type="number" style="width: 5vw; padding: 0vh 1vw;" placeholder="MM">
+                    <input type="number" style="width: 5vw; padding: 0vh 1vw;" placeholder="YY">
+                    <input type="number" style="width: 5vw; padding: 0vh 1vw;" placeholder="CVC">
+                </div>
+                <button type="submit">Confirm</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

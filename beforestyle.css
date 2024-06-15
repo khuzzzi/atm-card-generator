@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+
+.left{
+    height: 100%;
+    width: 40%;
+    display: flex;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-front {
+    height: 30%;
+    width: 27vw;
+    position: absolute;
+    top: 17%;
+    left: 8%;
+}
+
+.card-logo {
+    position: absolute;
+    top: 19%;
+    left: 10%;
+}
+
+.card-number {
+    font-family: "Space Grotesk";
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    font-size: 1.8vw;
+    color: white;
+    letter-spacing: .10vw;
+    font-weight: normal;
+}
+
+.card p {
+    font-family: "Space Grotesk";
+}
+ 
+.left-para {
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    color: white;
+}
+
+.right-para {
+    position: absolute;
+    top: 42%;
+    left: 30%;
+    color: white;
+}
+
+.back-card img {
+    position: absolute;
+    top: 52%;
+    left: 15%;
+    color: white;
+}
+
+.right-area {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-grp {
+    font-family: "Space Grotesk";
+    margin-top: 20px;
+}
+
+.input-grp input {
+    width: 22vw;
+    height: 5vh;
+    border-radius: 5px;
+    border: 1px solid #d2d3d8;
+    font-family: "Space Grotesk";
+    padding: 1vh 1vw;
+    font-size: 1.2vw;
+}
+
+.input-grp p {
+    letter-spacing: 1.8px;
+    font-size: .8vw;
+    margin-bottom: 1vh;
+}
+
+.input-grp input.error {
+    border: 1px solid hsl(0, 100%, 66%);
+    /* background-color: hsl(0, 100%, 95%); */
+}
+
+.input-grp3 {
+    font-family: "Space Grotesk";
+    margin-top: 20px;
+}
+
+.input-grp3 input{
+    width: 22vw;
+    height: 5vh;
+    border-radius: 5px;
+    border: 1px solid #d2d3d8;
+    font-family: "Space Grotesk";
+    padding: 3vh 3vw;
+    font-size: 1.2vw;
+    margin-top: 1vh;
+}
+
+
+
+button {
+    font-family: "Space Grotesk";
+    background-color: #220930;
+    color: white;
+    border: none;
+    width: 20vw;
+    height: 6vh;
+    margin-top: 7vh;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+}
+.number-format-error{
+    margin-top: 1vh;
+    color: red;
+    font-weight: bolder;
+    display: none;
+}
+
+
+ @media screen and (max-width : 1024px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html,body {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .container {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left img {
+        width: 100%;
+        height: 30%;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+    }
+    .card-front {
+        height: 30%;
+        width: 100%;
+        position: absolute;
+        top: 10%;
+        left: 5%;
+    }
+    .card-logo {
+        display: none;
+    }
+
+    .back-card {
+        height: 18%;
+        width: 70%;
+        position: absolute;
+        top: 2%;
+        left: 24%;
+    }
+
+    .back-card img {
+        height: 102%;
+        width: 70%;
+        position: absolute;
+        top: 2%;
+        left: 24%;
+    }
+    .right-area {
+        height: 100%;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+    }
+    
+    .input-grp {
+        font-family: "Space Grotesk";
+        margin-top: 20px;   
+    }
+    
+    .input-grp input {
+        width: 65vw;
+        height: 5vh;
+        border-radius: 5px;
+        border: 1px solid #d2d3d8;
+        font-family: "Space Grotesk";
+        padding: 2vh 2vw;
+        font-size: 3.2vw;
+        
+    }
+    
+    .input-grp p {
+        letter-spacing: 1.8px;
+        font-size: 2.8vw;
+        margin-bottom: 1vh;
+    }
+
+    .input-grp{
+        display: flex;
+        flex-direction: column;
+    }
+    .input-grp3 input {
+        font-size: 3vw;
+        /* padding: 3vh 5vw; */
+        height: 6vh;
+       
+        width: 20vw; /* Increased the width for better visibility */
+        min-width: 80px; /* Ensures a minimum width */
+        box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    }
+    .card p {
+        font-family: "Space Grotesk";
+    }
+     
+    .left-para {
+        position: absolute;
+        top: 32%;
+        left: 10%;
+        color: white;
+        font-size: 5vw;
+    }
+    
+    .right-para {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        color: white;
+    }
+
+    button {
+        font-size: 3vw;
+    }
+     
+}
